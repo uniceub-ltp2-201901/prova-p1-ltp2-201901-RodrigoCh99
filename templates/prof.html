@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>professor</title>
+</head>
+<body>
+    <h2>Informações do prof</h2>
+    <table border="2">
+        <tr>
+            <td>Nome</td>
+            <td>data de nascimento</td>
+            <td>Nome da mãe</td>
+            <td>Titulação</td>
+        </tr>
+         {% for i in info %}
+            <tr>
+                <td> {{ i[0] }} </td>
+                <td> {{ i[1] }} </td>
+                <td> {{ i[2] }} </td>
+                <td> {{ i[3] }} </td>
+            </tr>
+        {% endfor %}
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+    <table border="2">
+        <tr>
+            <td>Nome</td>
+            <td>curso</td>
+            <td>horas</td>
+        </tr>
+        {% for e in info2 %}
+            <tr>
+                <td> {{ e[0] }} </td>
+                <td> {{ e[1] }} </td>
+                <td> {{ e[2] }} </td>
+            </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

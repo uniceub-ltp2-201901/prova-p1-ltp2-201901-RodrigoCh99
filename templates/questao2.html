@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>questao2</title>
+</head>
+<body>
+    <h2>Professores:</h2>
+    <table border="2">
+        {% for n in nomes %}
+            <tr>
+                <td><a href="/exibirProfessor/{{n}}"> {{ n }}</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
